@@ -1,0 +1,17 @@
+spring:                   #开发环境
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true    #把sql语句输出到控制台
+
+logging:
+  level:
+    root: info    #springboot默认的日志级别  root是springboot
+    com.lt: debug  #自定义包的日志级别
+  file: log/blog-dev.log   #会在log文件夹下生成一个日志文件
+

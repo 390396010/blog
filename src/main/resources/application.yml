@@ -1,0 +1,6 @@
+spring:                   #公共的环境
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev              #指定什么时候使用什么配置文件  只需要指定-后面的名字 指定的开发环境的名字
+
